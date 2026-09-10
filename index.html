@@ -113,10 +113,62 @@
   </div>
   <form class="form-card" action="https://formsubmit.co/boazwekesa470@gmail.com" method="POST">
    <input type="hidden" name="_subject" value="New FinClarity Consultation Request"><input type="hidden" name="_captcha" value="false">
-   <div class="form-row"><label>Full name<input name="name" required></label><label>Business name<input name="business"></label></div>
-   <div class="form-row"><label>Email<input type="email" name="email" required></label><label>Phone / WhatsApp<input type="tel" name="phone"></label></div>
-   <div class="form-row"><label>Service needed<select name="service" required><option value="">Select a service</option><option>Bookkeeping & Accounting</option><option>Reconciliations</option><option>Financial Reporting</option><option>Budgeting & Financial Analysis</option><option>Excel Dashboard</option><option>Power BI Dashboard</option><option>Monthly Finance Support</option><option>Other</option></select></label><label>Monthly transactions<select name="transactions"><option>Not sure</option><option>Under 100</option><option>100–300</option><option>301–700</option><option>700+</option></select></label></div>
-   <label>How can we help?<textarea name="message" rows="5" placeholder="Briefly describe the support you need." required></textarea></label>
+   <div class="form-row">
+    <label>Full name<input name="name" autocomplete="name" required></label>
+    <label>Business name<input name="business" autocomplete="organization"></label>
+   </div>
+   <div class="form-row">
+    <label>Country / Region<input name="country" autocomplete="country-name" placeholder="e.g. Kenya, United States, United Kingdom" required></label>
+    <label>Phone / WhatsApp<input type="tel" name="phone" autocomplete="tel" placeholder="+254... / +1..."></label>
+   </div>
+   <div class="form-row">
+    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+    <label>Service needed<select name="service" required>
+      <option value="">Select a service</option>
+      <option>Bookkeeping & Accounting</option>
+      <option>Bank & Account Reconciliations</option>
+      <option>Financial Reporting</option>
+      <option>Budgeting & Financial Analysis</option>
+      <option>Excel Financial Dashboard</option>
+      <option>Power BI Dashboard</option>
+      <option>Monthly Finance Support</option>
+      <option>Other</option>
+    </select></label>
+   </div>
+   <div class="form-row">
+    <label>Estimated monthly transactions<select name="transactions">
+      <option>Not sure yet</option>
+      <option>Under 100 transactions</option>
+      <option>100–300 transactions</option>
+      <option>301–700 transactions</option>
+      <option>700+ transactions</option>
+    </select></label>
+    <label>Currency<select name="currency">
+      <option>KES</option>
+      <option>USD</option>
+      <option>GBP</option>
+      <option>EUR</option>
+      <option>CAD</option>
+      <option>AUD</option>
+      <option>Other</option>
+    </select></label>
+   </div>
+   <div class="form-row">
+    <label>Approx. monthly transaction value<select name="transaction_value">
+      <option>Not sure</option>
+      <option>Under 1,000</option>
+      <option>1,000–5,000</option>
+      <option>5,001–10,000</option>
+      <option>10,001–50,000</option>
+      <option>50,000+</option>
+    </select><span class="field-help">Amount is interpreted in the currency selected above.</span></label>
+    <label>Preferred contact method<select name="preferred_contact">
+      <option>Email</option>
+      <option>WhatsApp</option>
+      <option>Phone call</option>
+    </select></label>
+   </div>
+   <label>How can we help?<textarea name="message" rows="5" placeholder="Briefly describe the financial support you need." required></textarea></label>
    <button class="btn primary full" type="submit">Request Free Consultation</button>
    <small>By submitting, you agree that FinClarity Solutions may contact you about your enquiry.</small>
   </form>

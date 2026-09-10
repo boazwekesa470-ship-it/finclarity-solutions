@@ -1,20 +1,17 @@
-# FinClarity Solutions Website
+FinClarity Solutions — International Consultation Form Update
 
-This is the first website draft for FinClarity Solutions.
+This version improves the consultation form for both Kenyan and international clients.
 
-## Files
-- index.html — website structure and content
-- style.css — responsive styling
-- script.js — mobile navigation and copyright year
-- finclarity-logo.png — FinClarity Solutions logo
+New/improved fields:
+- Country / Region
+- Clear monthly transaction count labels
+- Currency selector: KES, USD, GBP, EUR, CAD, AUD, Other
+- Approximate monthly transaction value
+- Preferred contact method
+- Better mobile form spacing
 
-## Contact details currently included
-Phone: 0746 490 067
-Email: boazwekesa470@gmail.com
+UPLOAD:
+Extract this ZIP and upload all files to the ROOT of your existing
+finclarity-solutions GitHub repository, replacing the old files.
 
-## Before publishing
-1. Choose and register your preferred domain.
-2. Set up a professional business email if desired.
-3. Replace any placeholder content or add your final service packages/pricing.
-4. Add portfolio screenshots/testimonials when available.
-5. Upload the folder to your hosting provider.
+The consultation form still uses FormSubmit and may require one-time email activation after the first submission.

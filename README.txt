@@ -1,24 +1,16 @@
-FinClarity Solutions Website V5 — Conversion, Trust & Product Experience
+FINCLARITY SOLUTIONS WEBSITE V6 — CRM LEAD INTEGRATION
 
-DEPLOYMENT
-1. Extract this ZIP.
-2. Replace ALL existing GitHub Pages root files with the files in this folder.
-3. Confirm GitHub Settings > Pages publishes the same branch/folder (normally main / root).
-4. Wait for the Pages deployment to finish.
-5. Open the live site and hard-refresh (Ctrl+F5).
+This release preserves the V5 product/conversion design and connects the ERP Demo form directly to FinClarity Online ERP V16.8 CRM.
 
-IMPORTANT
-- Upload the extracted files, not the ZIP itself.
-- Replace index.html, style.css and script.js together.
-- V5 uses cache-busting parameters ?v=5.0.0.
-- FinClarityFX is clearly marked as under development and not investment advice.
-- Demo financial figures on the website are illustrative.
+DEPLOYMENT ORDER
+1. Run the ERP V16.8 Supabase migration first.
+2. Verify the `finclarity-web-v6` route exists in `website_lead_routes`.
+3. Deploy all Website V6 files together at the GitHub Pages publishing root.
+4. Hard refresh the live site.
+5. Submit one test demo request.
+6. Confirm it appears in ERP → Sales → CRM & Pipeline as Source = Website — ERP Demo.
 
-V5 HIGHLIGHTS
-- Premium interactive ERP Product Experience section
-- Stronger trust / security / implementation positioning
-- Buyer resources area
-- Improved FAQ accordion
-- Better footer and mobile conversion bar
-- Stronger metadata, favicon and social sharing setup
-- Responsive alignment and visual polish across desktop/tablet/mobile
+SECURITY
+- The website contains only the Supabase publishable browser key, not a service-role or privileged key.
+- Public submission is limited to one SECURITY DEFINER RPC with validation, a honeypot and basic per-contact throttling.
+- The public website has no read access to CRM data.
